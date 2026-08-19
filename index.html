@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WABA Template Guard helps teams review WhatsApp message templates for common risk signals before submission." />
+  <title>WABA Template Guard — WhatsApp Template Risk Checker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">W</span><span>WABA <b>Template Guard</b></span></a>
+    <nav><a href="#checker">Checker</a><a href="#how">How it works</a><a href="#pricing">Pricing</a></nav>
+    <a class="top-cta" href="#checker">Check a template</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow">BUILT FOR WHATSAPP BUSINESS TEAMS</div>
+      <h1>Catch template risks <span>before you submit.</span></h1>
+      <p class="hero-copy">Review wording, variables, CTAs and promotional signals in seconds. Get practical fixes and a cleaner version ready for your team.</p>
+      <div class="hero-actions"><a class="primary" href="#checker">Start checking free</a><a class="secondary" href="#how">See how it works ↓</a></div>
+      <div class="trust-row"><span>✓ No WhatsApp account required</span><span>✓ Runs in your browser</span><span>✓ No template data sent anywhere in this MVP</span></div>
+    </section>
+
+    <section class="checker-wrap" id="checker">
+      <div class="section-heading"><div><div class="eyebrow">TEMPLATE ANALYZER</div><h2>Review your message</h2></div><div class="badge">MVP · Free</div></div>
+      <div class="checker-grid">
+        <form class="panel editor" id="template-form">
+          <div class="field-row">
+            <label>Template category
+              <select id="category"><option value="utility">Utility</option><option value="marketing">Marketing</option><option value="authentication">Authentication</option></select>
+            </label>
+            <label>Language
+              <select id="language"><option>English</option><option>Hindi</option><option>Tamil</option><option>Other</option></select>
+            </label>
+          </div>
+          <label>Template body
+            <textarea id="template" rows="11" placeholder="Example: Hi {{1}}, your order #{{2}} has been shipped. You can track it using the button below."></textarea>
+          </label>
+          <div class="field-row">
+            <label>Header <span class="optional">optional</span><input id="header" placeholder="e.g. Order update" /></label>
+            <label>Footer <span class="optional">optional</span><input id="footer" placeholder="e.g. WABA Connect" /></label>
+          </div>
+          <label>Buttons <span class="optional">optional · one per line</span><textarea id="buttons" rows="3" placeholder="Track order\nContact support"></textarea></label>
+          <button class="primary full" type="submit">Analyze template <span>→</span></button>
+          <p class="fine-print">This checker provides risk guidance, not a guarantee of Meta approval. Always verify against the latest WhatsApp/Meta policies.</p>
+        </form>
+
+        <aside class="panel results" id="results" aria-live="polite">
+          <div class="empty-state"><div class="empty-icon">✦</div><h3>Your analysis will appear here</h3><p>Enter a template and click <b>Analyze template</b>. We'll flag common risk signals and suggest safer wording.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="eyebrow">HOW IT WORKS</div><h2>Simple enough for your sales team.</h2>
+      <div class="steps"><article><span>01</span><h3>Paste</h3><p>Add your body, variables, header, footer and buttons.</p></article><article><span>02</span><h3>Analyze</h3><p>Template Guard checks common risk patterns and structure issues.</p></article><article><span>03</span><h3>Improve</h3><p>Use the suggested rewrite as a starting point for a cleaner submission.</p></article></div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="eyebrow">START SMALL</div><h2>Free while we build.</h2>
+      <div class="price-card"><div><h3>Free</h3><p>3 analyses per month · core risk checks · rewrite suggestions</p></div><strong>₹0</strong><a class="primary" href="#checker">Try it</a></div>
+      <p class="coming">Pro features planned: unlimited checks, saved history, bulk CSV review, team workspaces and WABA Connect integration.</p>
+    </section>
+  </main>
+
+  <footer><span>© 2026 WABA Template Guard</span><span>Built by WABA Connect</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
